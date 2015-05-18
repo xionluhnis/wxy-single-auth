@@ -28,8 +28,8 @@ class Single_User_Auth {
         else
             $this->user = FALSE;
         // realm
-        if(array_key_exists('realm', $config))
-            $this->realm = $config['realm'];
+        if(array_key_exists('auth-realm', $config))
+            $this->realm = $config['auth-realm'];
         else
             $this->realm = "wxy";
         // HA1 part of digest

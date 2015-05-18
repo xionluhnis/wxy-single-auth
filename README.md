@@ -14,9 +14,9 @@ When logged in, the following parameters are available in the templates:
 ## Configuration
 
 ```php
-$config['auth-user'] = 'username';
-$config['realm']     = 'digest_realm_name';
-$config['auth-ha1']  = md5("{$user}:{$realm}:{$pass}");
+$config['auth-user']   = 'username';
+$config['auth-realm']  = 'digest_realm_name';
+$config['auth-ha1']    = md5("{$user}:{$realm}:{$pass}");
 // optional:
 $config['auth-login']  = 'required_login_value';    // ?login=required_login_value
 $config['auth-logout'] = 'required_logout_value';   // ?logout=required_logout_value
